@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "filter-chromium",
+  "version": "1.0.0",
+  "description": "Block undesirable content in HTML pages",
+  "content_scripts": [{
+      "matches": [ "*://twitter.com/*" ],
+      "js": [ "filter_twitter.js" ]
+  }]
+}
